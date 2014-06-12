@@ -5,7 +5,7 @@
 1. A server running Varnish 3.x. and management console enabled.
 2. PHP with sockets enabled.
 
-## Tnstallation
+## Installation
 
 3. Copy scripts/etc/varnish/ into the /etc/varnish/ directory on your Varnish server. This directory might be /opt/local/etc/varnish, or somewhere else.
 4. Copy scripts/site\_post\_autoload.php into config/. Make any changes to the config to match any new or updated Varnish config files in etc/varnish/
