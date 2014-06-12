@@ -4,6 +4,9 @@
 
 1. A server running Varnish 3.x. and management console enabled.
 2. PHP with sockets enabled.
+
+## Tnstallation
+
 3. Copy scripts/etc/varnish/ into the /etc/varnish/ directory on your Varnish server. This directory might be /opt/local/etc/varnish, or somewhere else.
 4. Copy scripts/site\_post\_autoload.php into config/. Make any changes to the config to match any new or updated Varnish config files in etc/varnish/
 5. Add this to your config/site.php file:
@@ -21,6 +24,8 @@ or
 
 	sudo varnishd -a your.server.com:80 -T 127.0.0.1:6082 -S /opt/local/etc/varnish/secret_key -s file,/tmp,500M
 
-9. Add the relevant admin host information to your server
-10. Enable the concrete5 Varnish config file in Dashboard > Varnish > Configuration
-11. Start Varnish via the dashboard.
+9. Copy packages/varnish\_cache/ into packages/.
+10. Install the add-on package from Dashboard -> Extend
+11. Add the relevant admin host information to your server
+12. Enable the concrete5 Varnish config file in Dashboard > Varnish > Configuration
+13. Start Varnish via the dashboard.
